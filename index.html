@@ -7,34 +7,130 @@
     <title>Shi-Fu-Mi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Share+Tech&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <main class="sm-col-14">
+    <main>
 
-        <button onclick="attribuerChoix('pierre')">Pierre</button>
-        <button onclick="attribuerChoix('feuille')">Feuille</button>
-        <button onclick="attribuerChoix('ciseaux')">Ciseaux</button>
+        <div class="mt-5 text-center">
+            <button class="rounded" onclick="attribuerChoix('pierre')">Pierre</button>
+            <button class="rounded" onclick="attribuerChoix('feuille')">Feuille</button>
+            <button class="rounded" onclick="attribuerChoix('ciseaux')">Ciseaux</button>
 
-        <p id="message"></p>
 
-        <div>
+        </div>
+
+        <p class="text-center mt-5 mb-5" id="message"></p>
+
+        <div class="text-center">
             <p id="player"></p>
             <p id="computer"></p>
         </div>
-        <div>
+
+        <div class="text-center mt-5">
             <p>Vous : <span id="userCount">0</span></p>
             <p>Ordinateur : <span id="computerCount">0</span></p>
         </div>
 
+        <!-- <div class="body">
+            <canvas id="canvas"></canvas>
+        </div> -->
 
 
     </main>
 
 
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+
+        // const canvas = document.getElementById("canvas")
+        // const context = canvas.getContext("2d")
+        // const width = canvas.width = 320
+        // const height = canvas.height = 480
+        // const frameWidth = 64
+        // const frameHeight = 100
+        // const xPos = 130
+        // const yPos = 160
+        // const scale = 1
+        // const fps = 60
+        // const secondsToUpdate = 1 * fps
+        // let count = 0
+
+        // canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px"
+
+        // let sprite = new Image()
+        // sprite.src = "assets/img/gokutransfo.png"
+
+        // function animate() {
+        //     context.drawImage(
+        //         spriteSheet,
+        //         0,
+        //         0,
+        //         frameWidth,
+        //         frameHeight,
+        //         xPos,
+        //         yPos,
+        //         frameWidth * scale,
+        //         frameHeight * scale
+        //     )
+        // }
+
+        // function frame() {
+        //     context.clearRect(0, 0, width, height)
+        //     requestAnimationFrame(frame)
+        // }
+
+        // let width = window.innerWidth,
+        //     height = window.innerHeight,
+        //     ratio = window.devicePixelRatio
+
+        // let x = width / 2
+        //     r = 100
+        //     step = 0
+
+        // let sprites = new Image()
+        // sprites.onload = animate
+        // sprites.src = "assets/img/goku(1).PNG"
+
+        // let canvas = document.getElementById("canvas"),
+        //     context = canvas.getContext("2d")
+
+        // canvas.width = width * ratio
+        // canvas.height = height * ratio
+        // canvas.style.width = width + "px"
+        // canvas.style.height = height + "px"
+        // context.scale(ratio, ratio)
+        // context.imageSmoothingEnabled = false
+
+        // function animate() {
+        //     draw()
+        //     update()
+        //     requestAnimationFrame(animate)
+        // }
+
+        // function draw() {
+        //     context.clearRect(0, 0, width, height)
+        //     drawGoku(x, height, r, Math.floor(step))
+        // }
+
+        // function drawGoku(x, y) {
+        //     let s = r/12
+        //     context.drawImage(sprites, 32 * step, 0, 32, 32, x - 16 * s, y - 26 * s, 32 * s, 32 * s)
+        // }
+
+
+        // function update() {
+        //     step ++;
+        //     if (step >= 12) {
+        //         step -= 12
+        //     }
+        // }
+    </script>
 </body>
 
 </html>
